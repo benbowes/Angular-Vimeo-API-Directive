@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html ng-app="VimeoRepeater">
 
@@ -15,9 +16,19 @@
       {'vid': '92435288', 'id': 'video1'}
     ]">
     
-    <div ng-repeat="video in videos">
-      <vimeo video="video"></vimeo>
-    </div>
+    <section class="max-width-wrap">    
+    
+      <h1>AngularJS Vimeo Directive</h1>
+      <p>An Angular Directive that utilises the Vimeo Froogaloop API</p>
+
+<p>This serves as an example of how you can use the API with Angular with custom play/pause buttons.</p>
+
+<p>Clicking on the custom button will make the video play/pause, clicking on the video's play/pause buttons and finishing the video - notifies the custom button of the state change.</p>
+    
+      <div ng-repeat="video in videos">
+        <vimeo video="video"></vimeo>
+      </div>
+    </section>
 
 </body>
 </html>

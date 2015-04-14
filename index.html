@@ -1,34 +1,35 @@
-
 <!DOCTYPE html>
 <html ng-app="VimeoRepeater">
 
-  <head>
-    <meta charset="utf-8" />
-    <title>AngularJS VimeoRepeater</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
-    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-    <script src="app.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS VimeoRepeater</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="app.js"></script>
+</head>
 
-  <body ng-init="videos = [
+<body ng-init="videos = [
       {'vid': '48694502', 'id': 'video0'}, 
       {'vid': '92435288', 'id': 'video1'}
     ]">
-    
-    <section class="max-width-wrap">    
-    
-      <h1>AngularJS Vimeo Directive</h1>
-      <p>An Angular Directive that utilises the Vimeo Froogaloop API</p>
 
-<p>This serves as an example of how you can use the API with Angular with custom play/pause buttons.</p>
+  <section>
 
-<p>Clicking on the custom button will make the video play/pause, clicking on the video's play/pause buttons and finishing the video - notifies the custom button of the state change.</p>
-    
-      <div ng-repeat="video in videos">
-        <vimeo video="video"></vimeo>
-      </div>
-    </section>
+    <h1>AngularJS Vimeo Directive</h1>
+    <p>An Angular Directive that utilises the Vimeo Froogaloop API</p>
+
+    <p>This serves as an example of how you can use the API with Angular with custom play/pause buttons.</p>
+
+    <p>Clicking on the custom button will make the video play/pause, clicking on the video's play/pause buttons and finishing the video - notifies the custom button of the state change.</p>
+
+    <div ng-repeat="video in videos">
+      <vimeo video="video"></vimeo>
+    </div>
+
+  </section>
 
 </body>
+
 </html>

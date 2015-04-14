@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="VimeoRepeater">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS VimeoRepeater</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-init="videos = [
+      {'vid': '48694502', 'id': 'video0'}, 
+      {'vid': '92435288', 'id': 'video1'}
+    ]">
+    
+    <div ng-repeat="video in videos">
+      <vimeo video="video"></vimeo>
+    </div>
+
+</body>
+</html>

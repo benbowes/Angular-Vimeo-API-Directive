@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="VimeoRepeater">
+<html ng-app="exampleApp">
 
 <head>
   <meta charset="utf-8" />
-  <title>AngularJS VimeoRepeater</title>
+  <title>AngularJS Vimeo API Directive</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
-  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-  <script src="app.js"></script>
 </head>
 
-<body ng-init="videos = [
+<body ng-cloak ng-init="videos = [
       {'vid': '48694502', 'id': 'video0'}, 
       {'vid': '92435288', 'id': 'video1'}
     ]">
@@ -29,6 +26,11 @@
     </div>
 
   </section>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="app.js"></script>
+  <script src="shared/vimeo/vimeoDirective.js"></script>
 
 </body>
 

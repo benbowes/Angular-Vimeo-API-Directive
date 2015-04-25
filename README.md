@@ -7,4 +7,5 @@ Clicking on the custom button will make the video play/pause, clicking on the vi
 
 View a demo here: http://polyform.com.au/vimeo-angular-directive/
 
-or here: http://plnkr.co/edit/BFLbVNbj2kHEJrPtfFmk
+Or you can see an implementation of it on my site here:
+http://benbowes.com/portfolio/#/closeup/bmw-finance-mini-finance-ignition-finance-and-alphera-finance-eportals
